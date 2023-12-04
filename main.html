@@ -1,0 +1,344 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KovaiGems - Discover Coimbatore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            border-radius: 0px 0px 5px 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li:hover > ul {
+            display: inherit;
+        }
+
+        nav ul ul li {
+            width: 200px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 200px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        ul.places-list,
+        ul.hotels-list,
+        ul.food-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.places-list li,
+        ul.hotels-list li,
+        ul.food-list li {
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        .back-button {
+            display: none;
+            margin-top: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+        .search-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-input {
+            padding: 5px;
+        }
+    /* Style for each section */
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section headings */
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    
+    padding-bottom: 10px;
+}
+
+/* Style for section content */
+section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Style for links within sections */
+section a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Style for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style for navigation submenus */
+nav ul ul {
+    background-color: #555;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add more specific styles for your sections if needed */
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>KovaiGems</h1>
+        <p>Discover the Hidden Gems: Unleashing the Potential of Local Tourism</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" id="home-link" onclick="goToHome()">Home</a></li>
+            <li><a href="#" id="places-link">Places</a>
+                <ul id="places-submenu">
+                    <li><a href="religious.html">Religious</a></li>
+                    <li><a href="shopping.html">Shopping</a></li>
+                    <li><a href="entertainment.html">Entertainment</a>
+                        <ul>
+                            <li><a href="movies.html">Movies</a></li>
+                            <li><a href="parks.html">Parks</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="falls.html">Falls Dams</a></li>
+                    <li><a href="hillstations.html">Hill Stations</a>
+                        <ul>
+                            <li><a href="spa.html">Spa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" id="stay-link">Stay</a>
+                <ul id="stay-submenu">
+                    <li><a href="hotels.html">Hotels</a></li>
+                    <li><a href="resorts.html">Resorts</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="food-link">Food</a>
+                <ul id="food-submenu">
+                    <li><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="adventures-section.html" id="adventures-link">Adventures</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-section" class="content-section">
+        <h2>About Coimbatore</h2>
+        <p>Welcome to Coimbatore, a city known for its rich culture, vibrant history, and diverse attractions. Explore the various facets of Coimbatore, from religious landmarks to bustling shopping centers and serene hill stations.</p>
+        <p>Discover the charm of Coimbatore's entertainment scene, including movies and parks. Indulge in the natural beauty of falls and dams or rejuvenate your senses at tranquil spa retreats in the hill stations.</p>
+        <p>Whether you're looking for a comfortable stay in top-notch hotels or exploring local resorts, Coimbatore has a range of options to suit every traveler's preferences. Dive into the local culinary delights with delicious breakfast, lunch, and dinner options scattered across the city.</p>
+        <p>Move around the city with ease using various transportation options, including four-wheelers, two-wheelers, and convenient ride services like Rapido, Ola, and Red Taxi.</p>
+        <p>For the adventurous souls, Coimbatore offers a range of exciting activities to add a thrilling touch to your visit. Explore and create unforgettable memories in the adventure-filled landscapes of Coimbatore.</p>
+    </section>
+    
+    
+    <script>
+        // JavaScript functions for navigation and search
+        function searchPlaces() {
+            let searchTerm = document.getElementById('places-search').value.toLowerCase();
+            let placesList = document.querySelectorAll('#places-section .places-list a');
+
+            placesList.forEach(place => {
+                let placeName = place.textContent.toLowerCase();
+                if (placeName.includes(searchTerm)) {
+                    place.style.display = 'block';
+                } else {
+                    place.style.display = 'none';
+                }
+            });
+        }
+
+        function goToPlace(pageUrl) {
+            window.location.href = pageUrl;
+        }
+
+        // Add event listeners for main menu links
+        document.getElementById('places-link').addEventListener('click', showPlacesSubMenu);
+        document.getElementById('stay-link').addEventListener('click', showStaySubMenu);
+        document.getElementById('food-link').addEventListener('click', showFoodSubMenu);
+        document.getElementById('adventures-link').addEventListener('click', showAdventuresSection);
+        document.getElementById('places-link').addEventListener('click', function () {
+    scrollToSection('places-section');
+});
+
+    document.getElementById('stay-link').addEventListener('click', function () {
+        scrollToSection('stay-section');
+    });
+
+    document.getElementById('food-link').addEventListener('click', function () {
+        scrollToSection('food-section');
+    });
+
+    document.getElementById('adventures-link').addEventListener('click', function () {
+        scrollToSection('adventures-section');
+    });
+
+    function scrollToSection(sectionId) {
+        hideAllContentSections();
+        hideAllSubmenus();
+        document.getElementById(sectionId).style.display = 'block';
+
+        // Scroll to the section
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+
+        function showPlacesSubMenu() {
+            hideAllContentSections();
+            hideAllSubmenus();
+            document.getElementById('places-section').style.display = 'block';
+            document.getElementById('places-submenu').style.display = 'block';
+        }
+
+         function showStaySubMenu() {
+            hideAllContentSections();
+            hideAllSubmenus();
+            document.getElementById('stay-section').style.display = 'block';
+            document.getElementById('stay-submenu').style.display = 'block';
+        }
+
+        function showFoodSubMenu() {
+            hideAllContentSections();
+            hideAllSubmenus();
+            document.getElementById('food-section').style.display = 'block';
+            document.getElementById('food-submenu').style.display = 'block';
+        }
+
+       
+        function showAdventuresSection() {
+            hideAllContentSections();
+            hideAllSubmenus();
+            document.getElementById('adventures-section').style.display = 'block';
+        }
+
+        function hideAllSubmenus() {
+            document.getElementById('places-submenu').style.display = 'none';
+            document.getElementById('stay-submenu').style.display = 'none';
+            document.getElementById('food-submenu').style.display = 'none';
+            }
+
+        function hideAllContentSections() {
+            document.getElementById('places-section').style.display = 'none';
+            document.getElementById('stay-section').style.display = 'none';
+            document.getElementById('food-section').style.display = 'none';
+            document.getElementById('adventures-section').style.display = 'none';
+        }
+        function goToHome() {
+            // Replace 'home.html' with the actual URL of your home page
+            window.location.href = 'main.html';
+        }
+    </script>
+
+</body>
+
+</html>

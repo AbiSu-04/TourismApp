@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KovaiGems - Religious Places</title>
+    <title>HiddenKovai - Discover Coimbatore</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: rgb(209, 208, 220);
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: rgb(50, 70, 141);
+            color: #ffffff;
             text-align: center;
             padding: 10px;
         }
 
         nav {
-            background-color: #444;
-            color: #fff;
+            background-color: #0e0303;
+            color: #f9f5f5;
             padding: 10px;
         }
 
@@ -74,8 +74,6 @@
             padding: 20px;
         }
 
-        /* Add specific styles for your sections if needed */
-
         footer {
             background-color: #333;
             color: #fff;
@@ -85,13 +83,119 @@
             bottom: 0;
             width: 100%;
         }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        ul.places-list,
+        ul.hotels-list,
+        ul.food-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.places-list li,
+        ul.hotels-list li,
+        ul.food-list li {
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        .back-button {
+            display: none;
+            margin-top: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+        .search-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-input {
+            padding: 5px;
+        }
+    /* Style for each section */
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section headings */
+section h2 {
+    color: #150202;
+    border-bottom: 2px solid #ddd;
+    
+    padding-bottom: 10px;
+}
+
+/* Style for section content */
+section p {
+    color: #080101;
+    line-height: 1.6;
+}
+
+/* Style for links within sections */
+section a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Style for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style for navigation submenus */
+nav ul ul {
+    background-color: #120202;
+}
+p.big {
+  line-height: 1.3;
+}
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#main-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Add some margin to separate the image from the content */
+        }
+        #falls-section img {
+            max-width: 100%;
+            height: 300px;
+            margin-bottom: 20px; /* Add some margin to separate the image from the content */
+        }
+/* Add more specific styles for your sections if needed */
+
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>KovaiGems</h1>
+        <h1>HiddenKovai</h1>
         <p>Discover the Hidden Gems: Unleashing the Potential of Local Tourism</p>
     </header>
 
@@ -103,12 +207,9 @@
                     <li><a href="religious.html">Religious</a></li>
                     <li><a href="shopping.html">Shopping</a></li>
                     <li><a href="entertainment.html">Entertainment</a>
-                        <ul>
-                            <li><a href="movies.html">Movies</a></li>
-                            <li><a href="parks.html">Parks</a></li>
-                        </ul>
+                        
                     </li>
-                    <li><a href="falls.html">Falls Dams</a></li>
+                    <li><a href="falls.html">Falls and Dams</a></li>
                     <li><a href="hillstations.html">Hill Stations</a>
                        
                     </li>
@@ -122,9 +223,9 @@
             </li>
             <li><a href="#" id="food-link">Food</a>
                 <ul id="food-submenu">
-                    <li><a href="breakfast.html">Breakfast</a></li>
-                    <li><a href="lunch.html">Lunch</a></li>
-                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="cafes.html">Cafes</a></li>
+                    <!-- <li><a href="dinner.html">Dinner</a></li> -->
                 </ul>
             </li>
             <li><a href="adventures-section.html" id="adventures-link">Adventures</a></li>
@@ -132,8 +233,46 @@
     </nav>
 
     <section id="falls-section" class="content-section">
-        <h2>falls Places in Coimbatore</h2>
-        <!-- Add content specific to religious places here -->
+        <h2>Cascade Chronicles</h2>
+        <h3>Falls</h3>
+        <h4> Birla Water Falls </h4>
+        <img src="./birla.jpg" alt="Description of the image">
+        <p>Birla Waterfalls is a scenic waterfall located in the Valparai region of Tamil Nadu, India. The waterfall is situated in the midst of a dense forest and is surrounded by lush green vegetation, making it a popular destination for tourists looking to enjoy the natural beauty of the region.</p>
+        <p>Airport: 3 hr 34 min  (124.1km)</p>
+        <p>Railway station: 3 hr 13 min  (109.5km)</p>
+
+        <h4> Kunjunni Water Falls </h4>
+        <img src="./kunjunni.jpeg" alt="Description of the image">
+        <p>Kunjunni Waterfalls in Valparai, Tamil Nadu, beckons with serene charm amidst lush greenery and a dense forest. Perfect for nature enthusiasts seeking relaxation in a picturesque setting.</p>
+        <p>Airport: 3 hr 46 min  (134km)</p>
+        <p>Railway station: 3 hr 27 min  (120km)</p>
+
+        <h4> Kovai Kutralam Water Falls </h4>
+        <img src="./kutralam.jpeg" alt="Description of the image">
+        <p>Kovai Kutralam is a scenic spot with a gentle waterfall originating on the Siruvani hill ranges. It is located on the western ghat mountain range that lies to the west of the city.The siruvani dam is just above this water fall.</p>
+        <p>Airport: 1 hr 37 min  (46km)</p>
+        <p>Railway station: 1 hr 12 min  (34km)</p>
+       
+        
+        <h4> Aliyar Dam </h4>
+        <img src="./aliyar.jpg" alt="Description of the image">
+        <p>The dam is located in the foothills of Valparai, in the Anaimalai Hills of the Western Ghats. It is about 65 kilometres (40 mi) from Coimbatore.</p>
+        <p>Airport: 2 hr 6 min  (79km)</p>
+        <p>Railway station: 1 hr 48 min  (65km)</p>
+
+        <h4> Upper Solaiyar Dam </h4>
+        <img src="./sholayar.jpeg" alt="Description of the image">
+        <p>The Solaiyar dam is a vital reservoir under the Parambikulam Aliyar Project and has a water storage capacity of 160 ft (49 m). The reservoir's overflowing waters are let into the Parambikulam Reservoir through the saddle dam.  </p>
+        <p>Airport: 4 hr 58 min  (158.9km)</p>
+        <p>Railway station: 4 hr 38 min  (144.4km)</p>
+
+        <h4> Check Dam </h4>
+        <img src="./check.jpeg" alt="Description of the image">
+        <p> A check dam placed in the ditch, swale, or channel interrupts the flow of water and flattens the gradient of the channel, thereby reducing the velocity. In turn, this obstruction induces infiltration and reduces eroding.</p>
+        <p>Airport: 1 hr 14 min  (38km)</p>
+        <p>Railway station: 1 hr 37 min  (48km)</p>
+
+
     </section>
 
     

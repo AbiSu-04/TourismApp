@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KovaiGems - Religious Places</title>
+    <title>HiddenKovai - Discover Coimbatore</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: rgb(209, 208, 220);
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: rgb(50, 70, 141);
+            color: #ffffff;
             text-align: center;
             padding: 10px;
         }
 
         nav {
-            background-color: #444;
-            color: #fff;
+            background-color: #0e0303;
+            color: #f9f5f5;
             padding: 10px;
         }
 
@@ -74,8 +74,6 @@
             padding: 20px;
         }
 
-        /* Add specific styles for your sections if needed */
-
         footer {
             background-color: #333;
             color: #fff;
@@ -85,13 +83,114 @@
             bottom: 0;
             width: 100%;
         }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        ul.places-list,
+        ul.hotels-list,
+        ul.food-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.places-list li,
+        ul.hotels-list li,
+        ul.food-list li {
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        .back-button {
+            display: none;
+            margin-top: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+        .search-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-input {
+            padding: 5px;
+        }
+    /* Style for each section */
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section headings */
+section h2 {
+    color: #150202;
+    border-bottom: 2px solid #ddd;
+    
+    padding-bottom: 10px;
+}
+
+/* Style for section content */
+section p {
+    color: #080101;
+    line-height: 1.6;
+}
+
+/* Style for links within sections */
+section a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Style for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style for navigation submenus */
+nav ul ul {
+    background-color: #120202;
+}
+p.big {
+  line-height: 1.3;
+}
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#main-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Add some margin to separate the image from the content */
+        }
+/* Add more specific styles for your sections if needed */
+
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>KovaiGems</h1>
+        <h1>HiddenKovai</h1>
         <p>Discover the Hidden Gems: Unleashing the Potential of Local Tourism</p>
     </header>
 
@@ -103,12 +202,9 @@
                     <li><a href="religious.html">Religious</a></li>
                     <li><a href="shopping.html">Shopping</a></li>
                     <li><a href="entertainment.html">Entertainment</a>
-                        <ul>
-                            <li><a href="movies.html">Movies</a></li>
-                            <li><a href="parks.html">Parks</a></li>
-                        </ul>
+                       
                     </li>
-                    <li><a href="falls.html">Falls Dams</a></li>
+                    <li><a href="falls.html">Falls and Dams</a></li>
                     <li><a href="hillstations.html">Hill Stations</a></li>
                 </ul>
             </li>
@@ -120,9 +216,9 @@
             </li>
             <li><a href="#" id="food-link">Food</a>
                 <ul id="food-submenu">
-                    <li><a href="breakfast.html">Breakfast</a></li>
-                    <li><a href="lunch.html">Lunch</a></li>
-                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="cafes.html">Cafes</a></li>
+                    <!-- <li><a href="dinner.html">Dinner</a></li> -->
                 </ul>
             </li>
             
@@ -131,8 +227,33 @@
     </nav>
 
     <section id="hillstations-section" class="content-section">
-        <h2>Hill stations Places in Coimbatore</h2>
-        <!-- Add content specific to religious places here -->
+        <h2>Verdant Vistas</h2>
+        <h3> Velliangiri Mountains </h3>
+        <img src="./vell.jpeg" alt="Description of the image">
+        <p>The Velliangiri Mountains a part of the Nilgiri Biosphere Reserve are situated at the Western Ghats of Coimbatore district, Tamil Nadu. Known as the "Sapthagiri, 7 Hills (Tamil: சப்தகிரி, ஏழுமலை) - Seven Mountains", these mountains are held and revered on par with spiritually most powerful place on the planet - Mount Kailash, the legendary abode of Shiva. On the top of the Velliangiri Mountains, Shiva is worshipped as Swayambhu, one who is self-created and in this form, he graces the devotees.</p>
+        <p>Airport : 1 hr 46 min  (50km)</p>
+        <p>Railway station: 1 hr 18 min  (38km)</p>
+
+        <h3> Valparai </h3>
+        <img src="./valparai.jpeg" alt="Description of the image">
+        <p>Discover the breathtaking beauty of Valparai, a serene hill station nestled in the lap of the Anamalai Range. Surrounded by lush tea estates, Valparai offers a picturesque escape with its mist-covered hills and cascading waterfalls. This hidden gem in Tamil Nadu, India, is a haven for nature enthusiasts and wildlife admirers alike. Explore the vibrant biodiversity as you encounter exotic flora and fauna, including the elusive lion-tailed macaques and vibrant birdlife. Valparai, with its tranquil landscapes and rich biodiversity, promises an unforgettable retreat, inviting you to unwind in the midst of nature's splendor.</p>
+        <p>Airport : 3 hr 24 min  (120km)</p>
+        <p>Railway station: 3 hr 3 min  (105.5km)</p>
+
+        <h3> Topslip Tiger Forest </h3>
+        <img src="./top.jpeg" alt="Description of the image">
+        <p>Immerse yourself in the enchanting wilderness of Topslip Tiger Forest, a hidden gem within the Anamalai Tiger Reserve. Nestled amidst the lush greenery of the Western Ghats, Topslip is a haven for biodiversity enthusiasts, offering glimpses of majestic Bengal tigers, playful elephants, and a myriad of exotic flora and fauna. Explore the pristine beauty of this conservation paradise through guided safaris, nature walks, and trekking trails. Topslip beckons, promising a harmonious blend of adventure and tranquility in the heart of nature's embrace.</p>
+         <p>Airport : 1 hr 19 min  (55km)</p>
+        <p>Railway station: 1 hr 5 min  (41 km)</p>
+
+        <h3> Anamalai Tiger Reserve </h3>
+        <img src="./anamalai.jpeg" alt="Description of the image">
+        <p>Anamalai Tiger Reserve, earlier known as Indira Gandhi Wildlife Sanctuary and National Park and as Anamalai Wildlife Sanctuary, is a protected area in the Anaimalai Hills of Pollachi and Valparai taluks of Coimbatore District and Udumalaipettai taluk in Tiruppur District, Tamil Nadu, India.</p>
+        <p>Airport : 3 hr 47 min  (126.2km)</p>
+        <p>Railway station: 3 hr 27 min  (111.6 km)</p>
+
+
+        
     </section>
 
     

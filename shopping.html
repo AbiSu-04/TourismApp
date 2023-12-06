@@ -4,25 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KovaiGems - Religious Places</title>
+    <title>HiddenKovai - Discover Coimbatore</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: rgb(209, 208, 220);
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: rgb(50, 70, 141);
+            color: #ffffff;
             text-align: center;
             padding: 10px;
         }
 
         nav {
-            background-color: #444;
-            color: #fff;
+            background-color: #0e0303;
+            color: #f9f5f5;
             padding: 10px;
         }
 
@@ -74,8 +74,6 @@
             padding: 20px;
         }
 
-        /* Add specific styles for your sections if needed */
-
         footer {
             background-color: #333;
             color: #fff;
@@ -85,13 +83,119 @@
             bottom: 0;
             width: 100%;
         }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        ul.places-list,
+        ul.hotels-list,
+        ul.food-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.places-list li,
+        ul.hotels-list li,
+        ul.food-list li {
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        .back-button {
+            display: none;
+            margin-top: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+        .search-button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .search-input {
+            padding: 5px;
+        }
+    /* Style for each section */
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for section headings */
+section h2 {
+    color: #150202;
+    border-bottom: 2px solid #ddd;
+    
+    padding-bottom: 10px;
+}
+
+/* Style for section content */
+section p {
+    color: #080101;
+    line-height: 1.6;
+}
+
+/* Style for links within sections */
+section a {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* Style for navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style for navigation submenus */
+nav ul ul {
+    background-color: #120202;
+}
+p.big {
+  line-height: 1.3;
+}
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#main-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* Add some margin to separate the image from the content */
+        }
+ #shopping-section img {
+            max-width: 90%;
+            height: 300px;
+            margin-bottom: 20px; /* Add some margin to separate the image from the content */
+        }
+/* Add more specific styles for your sections if needed */
+
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>KovaiGems</h1>
+        <h1>HiddenKovai</h1>
         <p>Discover the Hidden Gems: Unleashing the Potential of Local Tourism</p>
     </header>
 
@@ -103,12 +207,9 @@
                     <li><a href="religious.html">Religious</a></li>
                     <li><a href="shopping.html">Shopping</a></li>
                     <li><a href="entertainment.html">Entertainment</a>
-                        <ul>
-                            <li><a href="movies.html">Movies</a></li>
-                            <li><a href="parks.html">Parks</a></li>
-                        </ul>
+                        
                     </li>
-                    <li><a href="falls.html">Falls Dams</a></li>
+                    <li><a href="falls.html">Falls and Dams</a></li>
                     <li><a href="hillstations.html">Hill Stations</a>
                        
                     </li>
@@ -122,9 +223,9 @@
             </li>
             <li><a href="#" id="food-link">Food</a>
                 <ul id="food-submenu">
-                    <li><a href="breakfast.html">Breakfast</a></li>
-                    <li><a href="lunch.html">Lunch</a></li>
-                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="cafes.html">Cafes</a></li>
+                    <!-- <li><a href="dinner.html">Dinner</a></li> -->
                 </ul>
             </li>
             
@@ -133,8 +234,39 @@
     </nav>
 
     <section id="shopping-section" class="content-section">
-        <h2>shopping Places in Coimbatore</h2>
-        <!-- Add content specific to religious places here -->
+        <h2>Retail Therapy Spots</h2>
+        <h3> Prozone Mall </h3>
+        <img src="./prozone.jpg" alt="Description of the image">
+        <p>Address: F 201, Sivanandapuram, Sathy Rd, Coimbatore, Tamil Nadu 641035.</p>
+        <p>Airport : 26 min  (8.3km)</p>
+        <p>Railway station: 27 min  (8.3km)</p>
+
+        <h3> Brookefields Mall </h3>
+        <img src="./brooks.jpg" alt="Description of the image">
+        <p>Address: 67-71, Dr Krishnasamy Mudaliyar Rd, Brookefields, Sukrawar Pettai, Ram Nagar, Coimbatore, Tamil Nadu 641001</p>
+        <p>Airport : 30 min  (12km)</p>
+        <p>Railway station: 8 min  (2.7 km)</p>
+        
+        <h3> Fun Republic Mall </h3>
+        <img src="./fun.jpg" alt="Description of the image">
+        <p>Address: 474, Avinashi Road, Peelamedu, Coimbatore, Tamil Nadu 641004</p>
+        <p>Airport : 12 min  (4.3km)</p>
+        <p>Railway station: 15 min  (6.1 km)</p>
+        
+        <h3>Town Hall </h3>
+        <img src="./town.jpg" alt="Description of the image">
+        <p>Townhall is the core part of the city of Coimbatore in Tamil Nadu, India. It is the largest and the major commercial hub in the city with locations such as Oppanakara Street, Raja Street, Ukkadam, VH Road and NH Road. The locality derives its name from the Victoria Town Hall, Coimbatore. It is centrally located in the city. The major shopping destinations within Townhall is Oppanakara Street.  </p>
+        <p>Address: Raja Sreet, Coimbatore, Tamil Nadu 641001</p>
+        <p>Airport : 39 min  (11km)</p>
+        <p>Railway station: 7 min  (1.9 km)</p>
+
+        <h3> Cross Cut Road </h3>
+        <img src="./cross.jpg" alt="Description of the image">
+        <p>If you find yourself amid hordes of people sauntering on the road armed with heavy shopping bags heading to the city bus stand, you are most likely in Cross Cut Road, Gandhipuram. The 1.2 km-stretch from Gandhipuram Junction to North Coimbatore Flyover houses some of the established retail players in the market. For those who want to stock up their wardrobes with the finest fabric; this is where they could satiate their retail craving.</p>
+        <p>Address: 946 Cross-Cut Road, Gandhipuram, Coimbatore, Tamil Nadu 641012</p>
+        <p>Airport : 34 min  (10km)</p>
+        <p>Railway station: 11 min  (3.2 km)</p>
+        
     </section>
 
     

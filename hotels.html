@@ -1,97 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KovaiGems - Religious Places</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HiddenKovai - Discover Coimbatore</title>
+        <style>
+            body {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(209, 208, 220);
+            }
+    
+            header {
+                background-color: rgb(50, 70, 141);
+                color: #ffffff;
+                text-align: center;
+                padding: 10px;
+            }
+    
+            nav {
+                background-color: #0e0303;
+                color: #f9f5f5;
+                padding: 10px;
+            }
+    
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+    
+            nav li {
+                margin: 0 10px;
+            }
+    
+            nav a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+                font-size: 16px;
+            }
+    
+            nav ul ul {
+                display: none;
+                position: absolute;
+                background-color: #555;
+                border-radius: 0px 0px 5px 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            nav ul li:hover > ul {
+                display: inherit;
+            }
+    
+            nav ul ul li {
+                width: 200px;
+                float: none;
+                display: list-item;
+                position: relative;
+            }
+    
+            nav ul ul ul li {
+                position: relative;
+                top: -60px;
+                left: 200px;
+            }
+    
+            section {
+                padding: 20px;
+            }
+    
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+    
+            input[type="text"] {
+                padding: 5px;
+            }
+    
+            ul.places-list,
+            ul.hotels-list,
+            ul.food-list {
+                list-style: none;
+                padding: 0;
+            }
+    
+            ul.places-list li,
+            ul.hotels-list li,
+            ul.food-list li {
+                margin-bottom: 10px;
+            }
+    
+            select {
+                padding: 5px;
+            }
+    
+            .back-button {
+                display: none;
+                margin-top: 10px;
+                cursor: pointer;
+                color: blue;
+            }
+            .search-button {
+                padding: 5px 10px;
+                background-color: #4CAF50;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+    
+            .search-input {
+                padding: 5px;
+            }
+        /* Style for each section */
+    section {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 20px 0;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Style for section headings */
+    section h2 {
+        color: #150202;
+        border-bottom: 2px solid #ddd;
+        
+        padding-bottom: 10px;
+    }
+    
+    /* Style for section content */
+    section p {
+        color: #080101;
+        line-height: 1.6;
+    }
+    
+    /* Style for links within sections */
+    section a {
+        color: #3498db;
+        text-decoration: underline;
+    }
+    
+    /* Style for navigation links */
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    /* Style for navigation submenus */
+    nav ul ul {
+        background-color: #120202;
+    }
+    p.big {
+  line-height: 1.3;
+}
+    
+    /* Style for the footer */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    #main-section img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 20px; /* Add some margin to separate the image from the content */
+            }
+            #hotels-section img {
+            max-width: 100%;
+            height: 300px;
+            margin-bottom: 20px; /* Add some margin to separate the image from the content */
         }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav li {
-            margin: 0 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        nav ul ul {
-            display: none;
-            position: absolute;
-            background-color: #555;
-            border-radius: 0px 0px 5px 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        nav ul li:hover > ul {
-            display: inherit;
-        }
-
-        nav ul ul li {
-            width: 200px;
-            float: none;
-            display: list-item;
-            position: relative;
-        }
-
-        nav ul ul ul li {
-            position: relative;
-            top: -60px;
-            left: 200px;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        /* Add specific styles for your sections if needed */
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
+    /* Add more specific styles for your sections if needed */
+    
+        </style>
+    </head>
 
 <body>
 
     <header>
-        <h1>KovaiGems</h1>
+        <h1>HiddenKovai</h1>
         <p>Discover the Hidden Gems: Unleashing the Potential of Local Tourism</p>
     </header>
 
@@ -103,12 +207,9 @@
                     <li><a href="religious.html">Religious</a></li>
                     <li><a href="shopping.html">Shopping</a></li>
                     <li><a href="entertainment.html">Entertainment</a>
-                        <ul>
-                            <li><a href="movies.html">Movies</a></li>
-                            <li><a href="parks.html">Parks</a></li>
-                        </ul>
+                        
                     </li>
-                    <li><a href="falls.html">Falls Dams</a></li>
+                    <li><a href="falls.html">Falls and Dams</a></li>
                     <li><a href="hillstations.html">Hill Stations</a>
                        
                     </li>
@@ -122,9 +223,9 @@
             </li>
             <li><a href="#" id="food-link">Food</a>
                 <ul id="food-submenu">
-                    <li><a href="breakfast.html">Breakfast</a></li>
-                    <li><a href="lunch.html">Lunch</a></li>
-                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="cafes.html">Cafes</a></li>
+                    <!-- <li><a href="dinner.html">Dinner</a></li> -->
                 </ul>
             </li>
             <li><a href="adventures-section.html" id="adventures-link">Adventures</a></li>
@@ -132,8 +233,30 @@
     </nav>
 
     <section id="hotels-section" class="content-section">
-        <h2>Hotel Places in Coimbatore</h2>
-        <!-- Add content specific to religious places here -->
+        <h2>Opulent Stays</h2>
+        <h3>Radisson Blu</h3>
+        <img src="./blu.jpg" alt="Description of the image">
+        <p>Address : 164/165, Avinashi Rd, Coimbatore, Tamil Nadu 641004   </p>
+        <p>Airport: 16 min (6.6km) </p>
+        <p>Railway: 10 min (4km) </p>
+
+        <h3>Le Méridien</h3>
+        <img src="./le.jpg" alt="Description of the image">
+        <p>Address : 762, Avinashi Rd, Cexus Nagar, Neelambur, Tamil Nadu 641062        </p>
+        <p>Airport: 12 min (5.7km)  </p>
+        <p>Railway: 27 min (14km) </p>
+
+        <h3>Lemon Tree</h3>
+        <img src="./lemon.jpg" alt="Description of the image">
+        <p>Address : 3 & 174/4, Ranglu Naidu Farms 173, 1st Main Road, Kalapatti, Tamil Nadu 641048    </p>
+        <p>Airport: 14 min (6.6km) </p>
+        <p>Railway: 28 min (15km) </p>
+        
+        <h3>Hotel Park Elanza</h3>
+        <img src="./elanza.jpg" alt="Description of the image">
+        <p>Address : 412, Dr Nanjapaa Rd, Ram Nagar, Coimbatore, Tamil Nadu 641018   </p>
+        <p>Airport: 26 min (11km) </p>
+        <p>Railway: 5 min (1.7km) </p>
     </section>
 
     
